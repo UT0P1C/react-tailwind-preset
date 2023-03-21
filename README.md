@@ -5,7 +5,7 @@ Esse é um pacote de automatização na criação de projetos react
 
 - [Overview](#overview)
   - [Funções](#funções)
-  - [Como utilizar](#Como utilizar)
+  - [Como utilizar](#como-utilizar)
   - [Feito com](#feito-com)
 - [Autor](#autor)
 
@@ -23,7 +23,13 @@ Usuários podem:
 ### Como utilizar
 
 ```
-npm i tailwind-react-preset
+$ npm i -g tailwind-react-preset
+```
+
+Após a instalação, no diretório onde quer criar o projeto:
+
+```
+$ tailwind-react-preset
 ```
 
 
