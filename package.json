@@ -1,0 +1,26 @@
+{
+  "name": "tailwind-react-preset",
+  "version": "1.0.0",
+  "description": "Gerador de projetos react com as bibliotecas mais utilizadas por mim ",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "react",
+    "tailwind",
+    "preset",
+    "typescript",
+    "javascript",
+    "axios",
+    "dotenv",
+    "uuid",
+    "bcrypt"
+  ],
+  "author": "UT0P1C (Vinicius Gomes)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "typescript": "^5.0.2"
+  }
+}
