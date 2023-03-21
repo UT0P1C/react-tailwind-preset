@@ -2,19 +2,26 @@ const readlineSync = require('readline-sync')
 const {exec} = require('child_process')
 
 class Create {
+    Reset = "\x1b[0m"
+    FgBlue = "\x1b[34m"
+    FgGreen = "\x1b[32m"
+    FgMagenta = "\x1b[35m"
 
     presets() {
+
+        console.log(`${this.FgMagenta} Feito por: Vinicius Gomes`)
+        console.log(this.Reset)
+
         const presets = []
 
-        const ts = readlineSync.question('[!] Utilizar typescript? (S/n) ')
-
+        const ts = readlineSync.question(`${this.FgBlue}[!] Utilizar typescript? (S/n) `)
         ts.toLocaleLowerCase()
 
         if(!ts || ts === 's'){
             presets.push('ts')
         }
 
-        const tw = readlineSync.question('[!] Utilizar Tailwind? (S/n) ')
+        const tw = readlineSync.question(`[!] Utilizar Tailwind? (S/n) `)
 
         tw.toLocaleLowerCase()
 
@@ -29,6 +36,7 @@ class Create {
         const presets = this.presets()
 
         const name = readlineSync.question('[!] Nome do projeto: (meu-projeto-react) ')
+        console.log(this.Reset)
 
         var template = 'react'
 
@@ -48,8 +56,9 @@ class Create {
                 if (error) {
                     console.log(`error: ${error.message}`)
                 }
-                console.log('TailwindCSS instalado com sucesso...')
-                console.log('Arquivo de configuração padrão criado com sucesso...')
+                console.log(`${this.FgGreen}TailwindCSS instalado com sucesso...`)
+                console.log(`${this.FgGreen}Arquivo de configuração padrão criado com sucesso...`)
+                console.log(this.Reset)
             })
         })
     }
