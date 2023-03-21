@@ -2,12 +2,14 @@
   "name": "tailwind-react-preset",
   "version": "1.0.0",
   "description": "Gerador de projetos react com as bibliotecas mais utilizadas por mim ",
-  "main": "build/app.js",
+  "main": "src/app.js",
+  "preferGlobal": true,
   "scripts": {
     "start:dev": "npx nodemon",
-    "build": "rimraf ./build && tsc",
-    "start": "npm run build && node build/index.js",
     "test": "test"
+  },
+  "bin": {
+    "react-tailwind-preset": "./bin/react-tailwind-preset.js"
   },
   "keywords": [
     "react",
@@ -23,10 +25,7 @@
   "author": "UT0P1C (Vinicius Gomes)",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^18.15.5",
     "nodemon": "^2.0.21",
-    "rimraf": "^4.4.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.2"
+    "rimraf": "^4.4.0"
   }
 }
