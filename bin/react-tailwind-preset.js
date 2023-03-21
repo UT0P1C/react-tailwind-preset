@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-const ola = require('../src/app')
+const Create = require('../src/app')
 
-ola();
+Create.generate();
