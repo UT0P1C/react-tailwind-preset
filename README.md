@@ -20,6 +20,12 @@ Usuários podem:
 - Adicionar Typescript
 - Adicionar TailwindCSS
 
+### Como utilizar
+
+```
+npm i tailwind-react-preset
+```
+
 
 ### Feito com
 
